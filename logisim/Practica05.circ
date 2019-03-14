@@ -452,25 +452,25 @@
     <wire from="(300,250)" to="(360,250)"/>
     <wire from="(480,250)" to="(480,320)"/>
     <wire from="(300,300)" to="(300,370)"/>
+    <wire from="(540,170)" to="(540,310)"/>
+    <wire from="(210,390)" to="(210,460)"/>
     <wire from="(380,210)" to="(380,340)"/>
     <wire from="(450,270)" to="(450,280)"/>
     <wire from="(230,360)" to="(280,360)"/>
-    <wire from="(160,450)" to="(340,450)"/>
     <wire from="(550,310)" to="(550,400)"/>
     <wire from="(280,280)" to="(450,280)"/>
     <wire from="(300,130)" to="(410,130)"/>
     <wire from="(490,270)" to="(490,300)"/>
-    <wire from="(170,420)" to="(210,420)"/>
-    <wire from="(210,390)" to="(210,420)"/>
     <wire from="(310,290)" to="(310,380)"/>
     <wire from="(460,310)" to="(500,310)"/>
     <wire from="(360,250)" to="(360,340)"/>
     <wire from="(340,360)" to="(340,450)"/>
     <wire from="(330,400)" to="(550,400)"/>
     <wire from="(410,260)" to="(410,360)"/>
-    <wire from="(530,310)" to="(550,310)"/>
+    <wire from="(180,450)" to="(340,450)"/>
     <wire from="(410,260)" to="(440,260)"/>
     <wire from="(410,240)" to="(440,240)"/>
+    <wire from="(540,170)" to="(560,170)"/>
     <wire from="(210,460)" to="(620,460)"/>
     <wire from="(280,290)" to="(310,290)"/>
     <wire from="(280,300)" to="(300,300)"/>
@@ -478,7 +478,6 @@
     <wire from="(330,350)" to="(350,350)"/>
     <wire from="(390,360)" to="(410,360)"/>
     <wire from="(480,320)" to="(500,320)"/>
-    <wire from="(210,420)" to="(210,460)"/>
     <wire from="(370,230)" to="(370,340)"/>
     <wire from="(510,330)" to="(510,370)"/>
     <wire from="(510,250)" to="(510,290)"/>
@@ -495,11 +494,8 @@
     <wire from="(230,370)" to="(300,370)"/>
     <wire from="(390,350)" to="(460,350)"/>
     <wire from="(300,230)" to="(370,230)"/>
-    <comp lib="0" loc="(170,420)" name="Pin">
-      <a name="width" val="3"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Opcode"/>
-    </comp>
+    <wire from="(530,310)" to="(540,310)"/>
+    <wire from="(540,310)" to="(550,310)"/>
     <comp lib="0" loc="(510,370)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
@@ -509,15 +505,16 @@
     <comp lib="0" loc="(300,230)" name="Splitter">
       <a name="facing" val="west"/>
     </comp>
+    <comp lib="0" loc="(180,450)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reloj"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(210,390)" name="Splitter">
       <a name="fanout" val="3"/>
       <a name="incoming" val="3"/>
       <a name="bit0" val="2"/>
       <a name="bit2" val="0"/>
-    </comp>
-    <comp lib="0" loc="(160,450)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Escribir"/>
     </comp>
     <comp lib="0" loc="(300,250)" name="Splitter">
       <a name="facing" val="west"/>
@@ -537,6 +534,13 @@
     </comp>
     <comp lib="0" loc="(300,210)" name="Splitter">
       <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(560,170)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Resultado"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(300,130)" name="Splitter">
       <a name="facing" val="west"/>
